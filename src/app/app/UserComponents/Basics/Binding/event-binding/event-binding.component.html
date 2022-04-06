@@ -1,0 +1,16 @@
+
+<button (click)="singleClick()"> ClickOnceOrTwice</button>
+
+<p>
+  You have hit me {{hits}} times
+</p>
+
+
+<input type="text" (keyup)="showMsg($event)">
+
+<p>
+  Uppercase {{message|uppercase}}
+</p>
+<p>
+  Lowecase {{message|lowercase}}
+</p>

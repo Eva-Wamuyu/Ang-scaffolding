@@ -11,6 +11,11 @@ import { Component} from "@angular/core";
 export class HeaderComponent {
 
   menu:string[] = ["Home", "About", "Feedback"];
+
+
+  buttonEvent (){
+    
+  }
   
 
 }
