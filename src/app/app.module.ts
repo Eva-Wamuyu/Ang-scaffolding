@@ -6,7 +6,8 @@ import { HeaderComponent } from './UserComponents/headerComponent/header.compone
 import {FooterComponent} from './UserComponents/footerComponent/footer.component';
 import { EventBindingComponent } from './UserComponents/Binding/event-binding/event-binding.component';
 import { PropertyBindingComponent } from './UserComponents/Binding/property-binding/property-binding.component';
-import Assignment from './UserComponents/Basics/Assignment/assignment-component'  //this is a default class, that is why the {}
+import Assignment from './UserComponents/Basics/Assignment/assignment-component';
+import { StructuralDirectivesComponent } from './UserComponents/Basics/structural-directives/structural-directives.component'  //this is a default class, that is why the {}
 @NgModule({
   declarations: [
     AppComponent,
@@ -14,7 +15,8 @@ import Assignment from './UserComponents/Basics/Assignment/assignment-component'
     FooterComponent,
     EventBindingComponent,
     PropertyBindingComponent,
-    Assignment
+    Assignment,
+    StructuralDirectivesComponent
     
    
   ],
