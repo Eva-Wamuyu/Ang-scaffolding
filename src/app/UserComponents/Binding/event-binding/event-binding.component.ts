@@ -20,6 +20,11 @@ export class EventBindingComponent implements OnInit {
   }
   showMsg(e:any){
     this.message = e.target.value;
+
+  }
+
+  showContent(){
+    
   }
 
   
