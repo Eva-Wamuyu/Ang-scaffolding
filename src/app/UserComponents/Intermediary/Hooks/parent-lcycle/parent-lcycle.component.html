@@ -1,0 +1,25 @@
+<p>parent-lcycle works!</p>
+
+<p>
+  Hooks are methods that enable logic to be attached to our app at a particular instance
+
+  Examples:
+ 
+</p>
+<ul *ngFor = 'let example of exampleHooks'>
+  <li>
+    {{example}}
+  </li>
+</ul>
+<p>
+  {{messagesetOnInitialize}}
+</p>
+
+<p>
+  Parent Input Below:
+</p>
+
+<input [(ngModel)]="inputText"/>
+
+
+<app-child-lcycle [text]="inputText" ></app-child-lcycle>
