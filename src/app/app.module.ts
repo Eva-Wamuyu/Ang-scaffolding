@@ -11,7 +11,10 @@ import Assignment from './UserComponents/Basics/Assignment/assignment-component'
 import { StructuralDirectivesComponent } from './UserComponents/Basics/structural-directives/structural-directives.component';
 import { FormComponentComponent } from './UserComponents/Basics/Forms/form-component/form-component.component';
 import { ParentLcycleComponent } from './UserComponents/Intermediary/Hooks/parent-lcycle/parent-lcycle.component';
-import { ChildLcycleComponent } from './UserComponents/Intermediary/Hooks/child-lcycle/child-lcycle.component'  //this is a default class, that is why the {}
+import { ChildLcycleComponent } from './UserComponents/Intermediary/Hooks/child-lcycle/child-lcycle.component';
+import { RendererDirectiveDirective } from './UserComponents/Basics/Directives/renderer-directive.directive';
+import { DirectivethatmanipulatesdomDirective } from './UserComponents/Basics/Directives/directivethatmanipulatesdom.directive';
+import { HostlistenerdirectiveDirective } from './UserComponents/Basics/Directives/hostlistenerdirective.directive'  //this is a default class, that is why the {}
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,7 +26,10 @@ import { ChildLcycleComponent } from './UserComponents/Intermediary/Hooks/child-
     StructuralDirectivesComponent,
     FormComponentComponent,
     ParentLcycleComponent,
-    ChildLcycleComponent
+    ChildLcycleComponent,
+    RendererDirectiveDirective,
+    DirectivethatmanipulatesdomDirective,
+    HostlistenerdirectiveDirective
     
    
   ],
