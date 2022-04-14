@@ -14,7 +14,10 @@ import { ParentLcycleComponent } from './UserComponents/Intermediary/Hooks/paren
 import { ChildLcycleComponent } from './UserComponents/Intermediary/Hooks/child-lcycle/child-lcycle.component';
 import { RendererDirectiveDirective } from './UserComponents/Basics/Directives/renderer-directive.directive';
 import { DirectivethatmanipulatesdomDirective } from './UserComponents/Basics/Directives/directivethatmanipulatesdom.directive';
-import { HostlistenerdirectiveDirective } from './UserComponents/Basics/Directives/hostlistenerdirective.directive'  //this is a default class, that is why the {}
+import { HostlistenerdirectiveDirective } from './UserComponents/Basics/Directives/hostlistenerdirective.directive';
+import { BankComponent } from './UserComponents/BankProject/bank/bank.component';
+import { NewAccComponent } from './UserComponents/BankProject/new-acc/new-acc.component';
+import { TemplateDrivenComponent } from './UserComponents/Intermediary/Forms/TemplateDrivenForms/template-driven/template-driven.component'  //this is a default class, that is why the {}
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,7 +32,10 @@ import { HostlistenerdirectiveDirective } from './UserComponents/Basics/Directiv
     ChildLcycleComponent,
     RendererDirectiveDirective,
     DirectivethatmanipulatesdomDirective,
-    HostlistenerdirectiveDirective
+    HostlistenerdirectiveDirective,
+    BankComponent,
+    NewAccComponent,
+    TemplateDrivenComponent
     
    
   ],

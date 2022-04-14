@@ -1,0 +1,17 @@
+<div class="container-fluid">
+  <h4 class="text-center">Create New Account</h4>
+<app-new-acc></app-new-acc>
+
+<h4 class="text-center">All Our accounts</h4>
+<div *ngFor="let account of accounts" class="w-75 m-auto">
+<h3>
+  {{account.name }}
+</h3>
+<p>
+Account Type: {{account.accType}}
+</p>
+<p>
+  The Balance:  {{account.bal}}
+</p>
+</div>
+</div>

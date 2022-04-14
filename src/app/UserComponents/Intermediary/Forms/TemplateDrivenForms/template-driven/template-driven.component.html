@@ -1,0 +1,35 @@
+
+<div class="container" >
+ 
+  <div class=" w-50 m-auto text-center border p-2 mt-3">
+    <h3>Template Driven Form</h3>
+    <form (ngSubmit)="submitForm(tempform)" #tempform="ngForm">
+    <div class="form-group mb-3">
+    <label for="petName">Enter a pet name</label>
+    <input type="text" name="petName"ngModel class="form-control">
+    </div>
+    <div class="form-group">
+      <button>Suggest Name</button>
+    </div>
+    <div class="form-group">
+      <label for="">Pet Age</label>
+      <input type="text" class="form-control" name="petAge"ngModel>
+    </div>
+    <div class="form-group">
+      <label for="">Owner Name</label>
+      <input type="text" class='form-control' name="petOwner"ngModel>
+    </div>
+    <div class="form-group">
+      <label for="">Email</label>
+      <input type="email" name="" id="" class="form-control" name="petMail"ngModel>
+      <pre *ngIf="tempform" >
+
+      </pre>
+    </div>
+    <div class="form-group mt-3">
+      <Button type="submit" class="btn-secondary">Submit</Button>
+    </div>
+
+    </form>
+  </div>
+</div>
