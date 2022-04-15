@@ -1,0 +1,6 @@
+<div class="w3-bar w3-blue" style="width: 100%">
+  <a class="w3-bar-item w3-button"(click)="backPage()"  >Back</a>
+  <a class="w3-bar-item w3-button"(click)="switchPages('home')" [ngClass]="allPages[0]? 'bg-warning': ''">Home</a>
+  <a class="w3-bar-item w3-button"(click)="switchPages('about')" [ngClass]="allPages[1]? 'bg-warning': ''">About</a>
+  <a class="w3-bar-item w3-button"(click)="switchPages('contact')" [ngClass]="allPages[2]? 'bg-warning': ''">Contact</a>
+</div>

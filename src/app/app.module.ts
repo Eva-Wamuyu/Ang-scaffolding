@@ -17,7 +17,12 @@ import { DirectivethatmanipulatesdomDirective } from './UserComponents/Basics/Di
 import { HostlistenerdirectiveDirective } from './UserComponents/Basics/Directives/hostlistenerdirective.directive';
 import { BankComponent } from './UserComponents/BankProject/bank/bank.component';
 import { NewAccComponent } from './UserComponents/BankProject/new-acc/new-acc.component';
-import { TemplateDrivenComponent } from './UserComponents/Intermediary/Forms/TemplateDrivenForms/template-driven/template-driven.component'  //this is a default class, that is why the {}
+import { TemplateDrivenComponent } from './UserComponents/Intermediary/Forms/TemplateDrivenForms/template-driven/template-driven.component';
+import { HomeBasicComponent } from './UserComponents/Routing/Basic-Routing/home-basic/home-basic.component';
+import { AboutBasicComponent } from './UserComponents/Routing/Basic-Routing/about-basic/about-basic.component';
+import { ContactBasicComponent } from './UserComponents/Routing/Basic-Routing/contact-basic/contact-basic.component';
+import { MainBasicComponent } from './UserComponents/Routing/Basic-Routing/main-basic/main-basic.component'  //this is a default class, that is why the {}
+import { HeaderComponent as hed } from './UserComponents/Routing/Basic-Routing/header/header.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -35,7 +40,12 @@ import { TemplateDrivenComponent } from './UserComponents/Intermediary/Forms/Tem
     HostlistenerdirectiveDirective,
     BankComponent,
     NewAccComponent,
-    TemplateDrivenComponent
+    TemplateDrivenComponent,
+    HomeBasicComponent,
+    AboutBasicComponent,
+    ContactBasicComponent,
+    MainBasicComponent,
+    hed
     
    
   ],
