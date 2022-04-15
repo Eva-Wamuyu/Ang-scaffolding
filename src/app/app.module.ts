@@ -1,6 +1,10 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
+import { RouterModule, Routes } from '@angular/router';
+
+
+
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './UserComponents/headerComponent/header.component';
@@ -23,6 +27,25 @@ import { AboutBasicComponent } from './UserComponents/Routing/Basic-Routing/abou
 import { ContactBasicComponent } from './UserComponents/Routing/Basic-Routing/contact-basic/contact-basic.component';
 import { MainBasicComponent } from './UserComponents/Routing/Basic-Routing/main-basic/main-basic.component'  //this is a default class, that is why the {}
 import { HeaderComponent as hed } from './UserComponents/Routing/Basic-Routing/header/header.component';
+import { MainAngRoutingComponent } from './UserComponents/Routing/Angular-Routing/main-ang-routing/main-ang-routing.component';
+import { ContactAngRoutingComponent } from './UserComponents/Routing/Angular-Routing/contact-ang-routing/contact-ang-routing.component';
+import { AboutAngRoutingComponent } from './UserComponents/Routing/Angular-Routing/about-ang-routing/about-ang-routing.component';
+import { HomeAngRoutingComponent } from './UserComponents/Routing/Angular-Routing/home-ang-routing/home-ang-routing.component';
+import { HeaderAngRoutingComponent } from './UserComponents/Routing/Angular-Routing/header-ang-routing/header-ang-routing.component';
+import { ErrNotFoundComponent } from './UserComponents/Routing/Angular-Routing/err-not-found/err-not-found.component';
+
+
+const angRoutes: Routes = [
+  
+  
+  {path: '', component: HomeAngRoutingComponent},
+  {path: 'about', component: AboutAngRoutingComponent},
+  {path: 'contact', component: ContactAngRoutingComponent},
+  
+]
+
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -45,13 +68,20 @@ import { HeaderComponent as hed } from './UserComponents/Routing/Basic-Routing/h
     AboutBasicComponent,
     ContactBasicComponent,
     MainBasicComponent,
-    hed
+    hed,
+    MainAngRoutingComponent,
+    ContactAngRoutingComponent,
+    AboutAngRoutingComponent,
+    HomeAngRoutingComponent,
+    HeaderAngRoutingComponent,
+    ErrNotFoundComponent
     
    
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    RouterModule.forRoot(angRoutes),
     
   ],
   providers: [],
