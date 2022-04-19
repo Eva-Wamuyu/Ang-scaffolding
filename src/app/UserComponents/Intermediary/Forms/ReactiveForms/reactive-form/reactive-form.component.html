@@ -1,0 +1,48 @@
+
+<div class="container" >
+ 
+  <div class=" w-50 m-auto text-center border p-2 mt-3">
+    <h3>A Reactive Form</h3>
+    <form [formGroup]="theForm" (ngSubmit)="onSubmit()">
+    <div class="form-group mb-3">
+    <label for="petName">Enter a pet name</label>
+    <input type="text" formControlName="petName" class="form-control">
+    </div>
+    <div class="form-group">
+      <label for="">Pet Age</label>
+      <input type="text" class="form-control" formControlName="petAge">
+    </div>
+    <div class="form-group">
+      <label for="">Owner Name</label>
+      <input type="text" class='form-control' formControlName="petOwner">
+    </div>
+    <div class="form-group">
+      <label for="">Email</label>
+      <input type="email" name="" id="" class="form-control" formControlName="petMail">
+    <p *ngIf="theForm.get('petMail')?.valid && theForm.get('petMail')?.touched">
+      <small>
+      Invalid email
+      </small>
+    </p>
+    </div>
+    <div class="form-group mt-3">
+      <Button type="submit"  class="btn-secondary">Submit</Button>
+    </div>
+
+    </form>
+  </div>
+
+  <div *ngIf="see">
+    <h3>YOUR INPUT</h3>
+    <p>
+
+      PetName: {{petDetails.petName}}
+    </p>
+    <p>
+      PetOwner:  {{petDetails.petOwner}}
+    </p>
+    <p>
+      Owner Mail: {{petDetails.petMail }}
+    </p>
+  </div>
+</div>

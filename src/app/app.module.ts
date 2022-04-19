@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
 
 
@@ -33,12 +33,13 @@ import { AboutAngRoutingComponent } from './UserComponents/Routing/Angular-Routi
 import { HomeAngRoutingComponent } from './UserComponents/Routing/Angular-Routing/home-ang-routing/home-ang-routing.component';
 import { HeaderAngRoutingComponent } from './UserComponents/Routing/Angular-Routing/header-ang-routing/header-ang-routing.component';
 import { ErrNotFoundComponent } from './UserComponents/Routing/Angular-Routing/err-not-found/err-not-found.component';
+import { ReactiveFormComponent } from './UserComponents/Intermediary/Forms/ReactiveForms/reactive-form/reactive-form.component';
 
 
 const angRoutes: Routes = [
   
   
-  {path: '', component: HomeAngRoutingComponent},
+  {path: 'home', component: HomeAngRoutingComponent},
   {path: 'about', component: AboutAngRoutingComponent},
   {path: 'contact', component: ContactAngRoutingComponent},
   
@@ -74,7 +75,8 @@ const angRoutes: Routes = [
     AboutAngRoutingComponent,
     HomeAngRoutingComponent,
     HeaderAngRoutingComponent,
-    ErrNotFoundComponent
+    ErrNotFoundComponent,
+    ReactiveFormComponent
     
    
   ],
@@ -82,6 +84,7 @@ const angRoutes: Routes = [
     BrowserModule,
     FormsModule,
     RouterModule.forRoot(angRoutes),
+    ReactiveFormsModule,
     
   ],
   providers: [],
